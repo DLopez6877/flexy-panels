@@ -1,0 +1,17 @@
+@for $i from 1 through 9
+  .box:nth-child(#{$i})
+    @if $i == 1 or $i == 7
+      flex-basis: 400px
+    @else
+      flex-basis: 200px
+
+@for $i from 1 through 9
+  .box:nth-child(#{$i})
+    @if $i == 1 or $i == 5 or $i == 9
+      background-color: blue
+    @else if $i == 2 or $i == 6
+      background-color: tan
+    @else if $i == 3 or $i == 7
+      background-color: seagreen
+    @else
+      background-color: red
